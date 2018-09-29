@@ -16,6 +16,7 @@ public class main {
 //        easyStage.printStageWithMonster();
 
 //        put hero into stage and start play in Gameplay class
+//        each stage return a hero but will return null if hero die
         hero=Gameplay.Gameplay(hero, easyStage);
         if (hero != null) {
             System.out.println("-------------------------------------\nStage 2 start\n-------------------------------------");
@@ -25,9 +26,11 @@ public class main {
             System.out.println("-------------------------------------\nStage 3 start\n-------------------------------------");
             hero = Gameplay.Gameplay(hero, hardStage);
         }
-        if (hero.getHP() > 0) {
-            System.out.println("You win");
-        } else {
+        try {
+            if (hero.getHP() > 0) {
+                System.out.println("You win");
+            }
+        } catch (Exception e) {
             System.out.println("You lose XD");
         }
 

@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a1fd7d1-ec6e-4d2d-8f7a-8ed91ef9ce10" name="Default Changelist" comment="combind tgt">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3a1fd7d1-ec6e-4d2d-8f7a-8ed91ef9ce10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/BattleStart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/BattleStart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Combat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Combat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Gameplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Gameplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_Hard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_Hard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_Medium.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_Medium.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_easy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Monster_easy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Skill_DamageX2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Skill_DamageX2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Skill_Heal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Skill_Heal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/Stage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/Stage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ITE221GAME/testMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ITE221GAME/testMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Combat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gameplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,22 +73,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="491" />
+          <entry key="java" value="737" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="491" />
+          <entry key="JAVA" value="737" />
+          <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.rename.constructor" />
@@ -95,7 +106,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -107,11 +118,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Gameplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="95">
+              <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Combat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="88" column="108" lean-forward="true" selection-start-line="88" selection-start-column="108" selection-end-line="88" selection-end-column="108" />
             </state>
           </provider>
         </entry>
@@ -128,6 +148,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>CombatMenu(hero, mob)</find>
+      <find>Stage 3</find>
+      <find>Monster attacks back! Your health</find>
+      <find>Monster attacks back!</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,10 +167,10 @@
         <option value="$PROJECT_DIR$/src/Monster.java" />
         <option value="$PROJECT_DIR$/src/Card_Choice.java" />
         <option value="$PROJECT_DIR$/src/SkillUsePhase.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/src/Combat.java" />
         <option value="$PROJECT_DIR$/src/Stage.java" />
         <option value="$PROJECT_DIR$/src/Gameplay.java" />
+        <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/Combat.java" />
       </list>
     </option>
   </component>
@@ -196,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538228263268" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538228975262" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -256,7 +279,7 @@
       <workItem from="1538114826613" duration="9306000" />
       <workItem from="1538207648119" duration="49000" />
       <workItem from="1538222152682" duration="609000" />
-      <workItem from="1538226103333" duration="2047000" />
+      <workItem from="1538226103333" duration="2856000" />
     </task>
     <task id="LOCAL-00001" summary="combind tgt">
       <created>1538126077673</created>
@@ -265,14 +288,22 @@
       <option name="project" value="LOCAL" />
       <updated>1538126077673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3 stage working">
+      <created>1538228378500</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538228378500</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12289000" />
+    <option name="totallyTimeSpent" value="13098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26918977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -313,7 +344,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="combind tgt" />
-    <option name="LAST_COMMIT_MESSAGE" value="combind tgt" />
+    <MESSAGE value="3 stage working" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 stage working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -322,7 +354,7 @@
           <url>file://$PROJECT_DIR$/src/main.java</url>
           <line>12</line>
           <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -330,17 +362,27 @@
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
       <expression>
+        <expression-string>1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>0</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>10</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>1000</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
         <expression-string>100</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>10</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -416,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Combat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="82" column="20" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Stage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -436,20 +471,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Gameplay.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="95">
+          <caret line="21" column="39" lean-forward="true" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Combat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="115">
+          <caret line="88" column="108" lean-forward="true" selection-start-line="88" selection-start-column="108" selection-end-line="88" selection-end-column="108" />
         </state>
       </provider>
     </entry>

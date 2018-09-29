@@ -1,14 +1,13 @@
 import java.util.Scanner;
 
 public class Combat {
-    public static Monster CombatMenu(Hero hero, Monster mob) {
+    public static boolean CombatMenu(Hero hero, Monster mob) {
         System.out.println();
         //here is combo menu
         //here player choose what he wants to do during combat
         //Scanner console = new Scanner(System.in);
         //combat continues if monster and hero have hp
-        while (mob.getHp() > 0) {
-
+        while (mob.getHp() > 0 && hero.getHP() > 0) {
             if (mob.getHp() > 0 && hero.getHP() > 0) {
 
                 if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1); //removes 1 cool down each turn
@@ -55,7 +54,7 @@ public class Combat {
 
 
                         hero.setHP(mob.Attack(hero, mob));
-                        System.out.print("\nMonster attacks back! Your health is " + hero.getHP());
+                        System.out.println("\nMonster attacks back! Your health is " + (hero.getHP() < 0 ? "0" : hero.getHP()));
                         break;
                     case 4:
                         //console.close();
@@ -77,10 +76,10 @@ public class Combat {
         }
         if (mob.getHp() <= 0) {
             System.out.println("\n!!!!!!!!!!=============!!!!!!!!!!\nYou have defeated a monster.");
-            return null;
+            return true;
 
         }
-        return null;
+        return false;
     }
 
 
@@ -92,7 +91,7 @@ public class Combat {
             //mob attack back
             if (mob.getHp() > 0) {
                 hero.setHP(mob.Attack(hero, mob));
-                System.out.print("\nMonster attacks back! Your health is " + hero.getHP());
+                System.out.println("\nMonster attacks back! Your health is " + hero.getHP());
             }
 //            CombatMenu(hero, mob);
         }

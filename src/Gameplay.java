@@ -10,15 +10,14 @@ public class Gameplay {
         Scanner scan = new Scanner(System.in);
         stage.printStageHeroLocation();
         int monsterDefeatedCount = 0;
-
-        while (monsterDefeatedCount<8){
+        while (monsterDefeatedCount<8 && flag){
             System.out.println("pls move\nw=up, s= down, a=left, d=right");
             String move;
             move = scan.nextLine();
             stage.playerMove(move);
             if (stage.getStage(stage.getX(), stage.getY()) != null) {
 //                fight(stage.getStage(stage.getX(), stage.getY()), hero);
-                stage.setStage(stage.getX(), stage.getY(), Combat.CombatMenu(hero, stage.getStage(stage.getX(), stage.getY())));
+                flag = Combat.CombatMenu(hero, stage.getStage(stage.getX(), stage.getY()));
 
                 if (hero.getHP() > 0) {
                     monsterDefeatedCount++;
@@ -29,7 +28,12 @@ public class Gameplay {
         }
         if (hero.getHP() > 0) {
             return hero;
-        } else return null;
+        } else {
+
+            return null;
+        }
+
+
 //                String move = scan.nextLine();
 
 
