@@ -138,6 +138,14 @@ public class Stage implements stageInterface{
         } else return null;
     }
 
+    public Monster[][] getStage() {
+        return stage;
+    }
+
+    public void setStage(int x, int y, Monster monster) {
+        this.stage[x][y] = monster;
+    }
+
     public void setMonsgterDie(int x, int y) {
         this.stage[x][y] = null;
     }

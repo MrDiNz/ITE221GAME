@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Combat {
-    public static void CombatMenu(Hero hero, Monster mob) {
+    public static Monster CombatMenu(Hero hero, Monster mob) {
         System.out.println();
         //here is combo menu
         //here player choose what he wants to do during combat
@@ -11,19 +11,17 @@ public class Combat {
 
             if (mob.getHp() > 0 && hero.getHP() > 0) {
 
-                if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1); //removes 1 cooldown each turn
+                if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1); //removes 1 cool down each turn
 
                 System.out.print("\n===================TURN START======================");
                 System.out.println("\nWhat do you want to do? \n 1) Attack. 2) Use skill. "
                         + "\n 3) Use a card from inventory. 4) Try to escape again.");
                 Scanner console = new Scanner(System.in);
                 int input = console.nextInt();
-                // console.close();
                 console.nextLine();
                 switch (input) {
                     case 1:
                         //attack
-                        //console.close();
                         AttackPhase(hero, mob);
                         break;
                     case 2:
@@ -35,8 +33,6 @@ public class Combat {
                             System.out.print("Your skill is on cooldown! Your skill will be available in " + hero.getHeroSkill().getSkillCD()
                                     + " turns. Please try again.");
                         Skill.setSkillCD(Skill.getSkillCD() + 1);//so the old value would remain when player start the turn again
-                        //	console.close();
-//                    CombatMenu(hero, mob);
                         break;
                     case 3:
                         //inventory use
@@ -48,8 +44,6 @@ public class Combat {
 
                         if (card.getTag() == null) {
                             System.out.print("\nWhoops! You picked a null card, try again...");
-//                        Skill.setSkillCD(Skill.getSkillCD()+1);
-//                            CombatMenu(hero, mob);
                         }
                         //todo rework cards that they give buff for 3 turns, would be a reverse cooldown similliar to skill one
                         else if (card.getTag().equals("health"))
@@ -61,10 +55,7 @@ public class Combat {
 
 
                         hero.setHP(mob.Attack(hero, mob));
-                        System.out.print("\nMonster attacks back! Your heCombatMenu(hero, mob)alth is " + hero.getHP());
-
-//                    CombatMenu(hero, mob);
-
+                        System.out.print("\nMonster attacks back! Your health is " + hero.getHP());
                         break;
                     case 4:
                         //console.close();
@@ -78,7 +69,6 @@ public class Combat {
 
                             hero.setHP(mob.AttackX(hero, mob, 2)); //if escape failed, player gets attacked with double damage
                             System.out.print("\nMonster attacks your back for critical damage! \nYour health is " + hero.getHP());
-//                        CombatMenu(hero, mob);
                         }
                         break;
                 }
@@ -86,19 +76,24 @@ public class Combat {
 
         }
         if (mob.getHp() <= 0) {
-            System.out.print("\n!!!!!!!!!!=============!!!!!!!!!!\nYou have defeated a monster.");
-            mob = null;
+            System.out.println("\n!!!!!!!!!!=============!!!!!!!!!!\nYou have defeated a monster.");
+            return null;
 
         }
+        return null;
     }
+
+
         public static void AttackPhase (Hero hero, Monster mob){
             //Basic Attack Phase where player and monster exchange damage
             mob.setHp(hero.Attack(hero, mob));
             System.out.print("\nYou chose to attack the monster! You attack monster for " + hero.getDamage()
-                    + ", monster health is " + mob.getHp());
+                    + ", monster health is " + (mob.getHp() < 0 ? "0":mob.getHp()));
             //mob attack back
-            hero.setHP(mob.Attack(hero, mob));
-            System.out.print("\nMonster attacks back! Your health is " + hero.getHP());
+            if (mob.getHp() > 0) {
+                hero.setHP(mob.Attack(hero, mob));
+                System.out.print("\nMonster attacks back! Your health is " + hero.getHP());
+            }
 //            CombatMenu(hero, mob);
         }
 }
