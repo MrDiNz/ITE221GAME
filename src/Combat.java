@@ -57,7 +57,6 @@ public class Combat {
                         System.out.println("\nMonster attacks back! Your health is " + (hero.getHP() < 0 ? "0" : hero.getHP()));
                         break;
                     case 4:
-                        //console.close();
                         System.out.print("\nYou chose escape");
                         if (Escape.Escape(hero.getEscapeStat())) {
                             System.out.print("\nWow, you escaped!");
@@ -65,14 +64,12 @@ public class Combat {
                         } else {
                             System.out.print("\nTough luck, you failed to escape!");
                             hero.setEscapeStat(hero.getEscapeStat() - 1);
-
                             hero.setHP(mob.AttackX(hero, mob, 2)); //if escape failed, player gets attacked with double damage
                             System.out.print("\nMonster attacks your back for critical damage! \nYour health is " + hero.getHP());
                         }
                         break;
                 }
             }
-
         }
         if (mob.getHp() <= 0) {
             System.out.println("\n!!!!!!!!!!=============!!!!!!!!!!\nYou have defeated a monster.");
@@ -83,16 +80,16 @@ public class Combat {
     }
 
 
-        public static void AttackPhase (Hero hero, Monster mob){
-            //Basic Attack Phase where player and monster exchange damage
-            mob.setHp(hero.Attack(hero, mob));
-            System.out.print("\nYou chose to attack the monster! You attack monster for " + hero.getDamage()
-                    + ", monster health is " + (mob.getHp() < 0 ? "0":mob.getHp()));
-            //mob attack back
-            if (mob.getHp() > 0) {
-                hero.setHP(mob.Attack(hero, mob));
-                System.out.println("\nMonster attacks back! Your health is " + hero.getHP());
-            }
-//            CombatMenu(hero, mob);
+    public static void AttackPhase(Hero hero, Monster mob) {
+        //Basic Attack Phase where player and monster exchange damage
+        mob.setHp(hero.Attack(hero, mob));
+        System.out.print("\nYou chose to attack the monster! You attack monster for " + hero.getDamage()
+                + ", monster health is " + (mob.getHp() < 0 ? "0" : mob.getHp()));
+        //mob attack back
+        if (mob.getHp() > 0) {
+            hero.setHP(mob.Attack(hero, mob));
+            System.out.println("\nMonster attacks back! Your health is " + hero.getHP());
         }
+//            CombatMenu(hero, mob);
+    }
 }

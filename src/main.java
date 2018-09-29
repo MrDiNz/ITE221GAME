@@ -17,7 +17,8 @@ public class main {
 
 //        put hero into stage and start play in Gameplay class
 //        each stage return a hero but will return null if hero die
-        hero=Gameplay.Gameplay(hero, easyStage);
+        System.out.println(hero);
+        hero = Gameplay.Gameplay(hero, easyStage);
         if (hero != null) {
             System.out.println("-------------------------------------\nStage 2 start\n-------------------------------------");
             hero = Gameplay.Gameplay(hero, mediumStage);

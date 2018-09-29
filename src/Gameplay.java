@@ -2,6 +2,7 @@
 
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class Gameplay {
     public static Hero Gameplay(Hero hero, Stage stage) {
 //        Start play here
@@ -10,7 +11,7 @@ public class Gameplay {
         Scanner scan = new Scanner(System.in);
         stage.printStageHeroLocation();
         int monsterDefeatedCount = 0;
-        while (monsterDefeatedCount<8 && flag){
+        while (monsterDefeatedCount < 8 && flag) {
             System.out.println("pls move\nw=up, s= down, a=left, d=right");
             String move;
             move = scan.nextLine();
@@ -24,7 +25,9 @@ public class Gameplay {
                 } else {
                     monsterDefeatedCount = 9;
                 }
-            }else {System.out.println("No monster here");}
+            } else {
+                System.out.println("No monster here");
+            }
         }
         if (hero.getHP() > 0) {
             return hero;
@@ -38,8 +41,6 @@ public class Gameplay {
 
 
     }
-
-
 
 
 }

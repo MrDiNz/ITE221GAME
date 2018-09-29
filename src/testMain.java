@@ -17,7 +17,7 @@ public class testMain {
 	public static void battleStart (Hero hero, Monster mob) {
 		hero.setEscapeStat(4);//Escape stat is defined every start of the battle
 		Scanner console = new Scanner(System.in);
-		System.out.print("\nYou see a monster. Fight (1) or flight (2)?");
+		System.out.print("\nYou see a monster. Fight (1) or Escape (2)?");
 		String input = console.nextLine();
 
 		if (input.equals("1")) {
@@ -51,8 +51,9 @@ public class testMain {
 		// TODO Auto-generated method stub
         Hero hero = Hero.HeroCreate();
 		Monster mob = new Monster_easy(100, 10, "aesfsef", 1);
-        System.out.print(hero);
-        System.out.print(mob);
+        System.out.println(hero);
+		System.out.println("----------------");
+        System.out.println(mob);
         
         battleStart(hero, mob);
 	}
