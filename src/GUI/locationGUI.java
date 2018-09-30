@@ -2,6 +2,8 @@ package GUI;
 
 import code.Hero;
 import code.Stage;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -9,6 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
 import java.io.IOException;
@@ -23,31 +26,7 @@ public class locationGUI implements Initializable {
     @FXML
     private Button[][] arrayButton;
     @FXML
-    private Button L00;
-
-    @FXML
-    private Button L01;
-
-    @FXML
-    private Button L02;
-
-    @FXML
-    private Button L10;
-
-    @FXML
-    private Button L11;
-
-    @FXML
-    private Button L12;
-
-    @FXML
-    private Button L20;
-
-    @FXML
-    private Button L21;
-
-    @FXML
-    private Button L22;
+    private Button L00,L01,L02,L10,L11,L12,L20,L21, L22;
 
     @FXML
     private Button buttonUP;
@@ -76,51 +55,85 @@ public class locationGUI implements Initializable {
     private Text heroInventory;
 
     @FXML
-    void UP(ActionEvent event) {
+    private BorderPane pane;
+
+    private int monsterDefeatedCount = 0;
+
+    @FXML
+    void UP(ActionEvent event) throws IOException {
 
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
         gameStage.setX(gameStage.getX() - 1);
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
 
     }
 
     @FXML
-    void DOWN(ActionEvent event) {
+    void DOWN(ActionEvent event) throws IOException {
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
         gameStage.setX(gameStage.getX() + 1);
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
     }
 
     @FXML
-    public void LEFT(ActionEvent event) {
+    public void LEFT(ActionEvent event) throws IOException {
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
         gameStage.setY(gameStage.getY() - 1);
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
     }
 
     @FXML
-    public void RIGHT(ActionEvent event) {
+    public void RIGHT(ActionEvent event) throws IOException {
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
         gameStage.setY(gameStage.getY() + 1);
         arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+    }
+    public void combat(Hero hero, Monster monster) throws IOException {
+        if (gameStage.getStage(gameStage.getX(), gameStage.getY()) != null) {
+//               GUI fight start here
+            FXMLLoader loader = new FXMLLoader();
+            Parent combatScene = loader.load(getClass().getResourceAsStream("CombatGUI.fxml"));
+            CombatGUI combatGUI = loader.getController();
+            javafx.stage.Stage stage = new javafx.stage.Stage();
+            stage.setScene(new Scene(combatScene));
+            combatGUI.setTextarea1("" +
+                    "===================TURN START======================\n" +
+                    monster+"\n" +
+                    "What do you want to do?");
+            combatGUI.setHero(hero);
+            combatGUI.setMonster(monster);
+            System.out.println(hero.getInventory());
+            combatGUI.updateInventory();
+//            ObservableList<Card> observableList = FXCollections.observableArrayList(hero.getCardArr());
+//            combatGUI.card.setItems(observableList);
+            pane.setDisable(true);
+            stage.showAndWait();
+            pane.setDisable(false);
+            if (hero.getHP() > 0 && monster.getHp() <= 0) {
+                gameStage.setMonsgterDie(gameStage.getX(), gameStage.getY());
+            }
+
+
+
+//            info update here
+            updateInfo();
+
+//            if (hero.getHP() > 0) {
+//                monsterDefeatedCount++;
+//            } else {
+//                monsterDefeatedCount = 9;
+//            }
+        } else {
+            System.out.println("No monster here");
+        }
     }
 
 
 
-
-//    public Hero run(Hero hero, Stage gameStage) throws IOException {
-//        javafx.stage.Stage stage = new javafx.stage.Stage();
-//        FXMLLoader loader = new FXMLLoader();
-//        Parent locationGUIScene = loader.load(getClass().getResourceAsStream("locationGUI.fxml"));
-//        locationGUIController = loader.getController();
-//        stage.setScene(new Scene(locationGUIScene));
-//        setStage(gameStage);
-//        setHero(hero);
-//        updateInfo(locationGUIController);
-//        stage.showAndWait();
-
-//        return locationGUIController.hero;
-//    }
 
     public Stage getStage() {
         return gameStage;
@@ -139,26 +152,13 @@ public class locationGUI implements Initializable {
     }
 
     public void updateInfo() {
-        System.out.println(hero.getName());
-        heroName.setText(hero.getName());
-        heroHP.setText(String.valueOf(hero.getHP()));
-        heroLevel.setText(String.valueOf(hero.getLvl()));
-        heroSkill.setText(String.valueOf(hero.heroSkill));
-        heroInventory.setText(hero.getInventory());
+        System.out.println(this.hero.getName());
+        heroName.setText(this.hero.getName());
+        heroHP.setText(String.valueOf(this.hero.getHP()));
+        heroLevel.setText(String.valueOf(this.hero.getLvl()));
+        heroSkill.setText(String.valueOf(this.hero.heroSkill));
+        heroInventory.setText(this.hero.getInventory());
 
-    }
-    public void updateLocation() {
-//        L00.setText("[   ]");
-//        L01.setText("[   ]");
-//        L02.setText("[   ]");
-//        L10.setText("[   ]");
-//        L11.setText("[   ]");
-//        L12.setText("[   ]");
-//        L20.setText("[   ]");
-//        L21.setText("[   ]");
-//        L22.setText("[   ]");
-
-//        gameStage.getX()
     }
 
     @Override

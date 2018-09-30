@@ -12,7 +12,7 @@ public class SkillUsePhase {
                 hero.setHP(mob.Attack(hero, mob));
                 System.out.print("\ncode.Monster attacks back! Your health is " + hero.getHP());
                 Skill.setSkillCD(2);//Sets cooldown on 2, so it would be available again in one turn
-//                code.Combat.CombatMenu(hero, mob);
+//                code.CombatGUI.CombatMenu(hero, mob);
                 break;
 
             case 2:
@@ -23,7 +23,7 @@ public class SkillUsePhase {
                 System.out.print("\ncode.Monster attacks back for "+ mob.getDmg() +"! Lucky you use shield and defend yourself, halving the damage!"
                         + " You health is " + hero.getHP());
                 Skill.setSkillCD(2);
-//                code.Combat.CombatMenu(hero, mob);
+//                code.CombatGUI.CombatMenu(hero, mob);
                 break;
         }
     }

@@ -28,7 +28,7 @@ public class Stage implements stageInterface{
                             //random the level of the monster
                             int randomlvl = Randomizer.Randomizer(1, 4);
                             //get a monster in to the array (hp = 50 , level by random, )
-                            stage[i][j] = new Monster_easy(50, randomlvl * Randomizer.Randomizer(1, 3), "code.Monster No." + countMonsNum, randomlvl);
+                            stage[i][j] = new Monster_easy(50, randomlvl * Randomizer.Randomizer(1, 3), "Monster No." + countMonsNum, randomlvl);
                             countMonsNum++;
                         }
                     }
@@ -41,7 +41,7 @@ public class Stage implements stageInterface{
                     for (int j = 0; j < 3; j++) {
                         if (!(i == 1 && j == 1)) {
                             int randomlvl = Randomizer.Randomizer(5, 8);
-                            stage[i][j] = new Monster_Medium(100, randomlvl * Randomizer.Randomizer(1, 3), "code.Monster No." + countMonsNum, randomlvl);
+                            stage[i][j] = new Monster_Medium(100, randomlvl * Randomizer.Randomizer(1, 3), "Monster No." + countMonsNum, randomlvl);
                             countMonsNum++;
                         }
                     }
@@ -54,7 +54,7 @@ public class Stage implements stageInterface{
                     for (int j = 0; j < 3; j++) {
                         if (!(i == 1 && j == 1)) {
                             int randomlvl = Randomizer.Randomizer(9, 12);
-                            stage[i][j] = new Monster_Hard(150, randomlvl * Randomizer.Randomizer(1, 3), "code.Monster No." + countMonsNum, randomlvl);
+                            stage[i][j] = new Monster_Hard(150, randomlvl * Randomizer.Randomizer(1, 3), "Monster No." + countMonsNum, randomlvl);
                             countMonsNum++;
                         }
                     }
@@ -89,7 +89,7 @@ public class Stage implements stageInterface{
     }
     @Override
     public String toString() {
-        return "code.code.Stage{" +
+        return "Stage{" +
                 "x=" + x +
                 ", y=" + y +
                 ", stage=" + Arrays.deepToString(stage) +

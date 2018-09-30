@@ -81,9 +81,13 @@ public class Hero implements heroInterface {
                 "\nslot [4] = " + inventory[3].getName() +
     			"\nslot [5] = " + inventory[4].getName();
     }
+
     
     public Card getCard(int num) {
     	return inventory[num];
+    }
+    public Card[] getCardArr() {
+        return inventory;
     }
 
     

@@ -1,6 +1,6 @@
 package code;
 
-abstract class Skill {
+public abstract class Skill {
     private String name;
     private String description;
     private static int skillCD;

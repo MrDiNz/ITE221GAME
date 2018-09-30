@@ -67,7 +67,7 @@ public class Combat {
                             System.out.print("\nTough luck, you failed to escape!");
                             hero.setEscapeStat(hero.getEscapeStat() - 1);
                             hero.setHP(mob.AttackX(hero, mob, 2)); //if escape failed, player gets attacked with double damage
-                            System.out.print("\ncode.Monster attacks your back for critical damage! \nYour health is " + hero.getHP());
+                            System.out.print("\nMonster attacks your back for critical damage! \nYour health is " + hero.getHP());
                         }
                         break;
                 }

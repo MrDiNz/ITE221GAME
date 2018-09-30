@@ -1,6 +1,6 @@
 package code;
 
-abstract class Monster { //was abstract
+public abstract class Monster { //was abstract
     private int hp, dmg;
     private String name;
     private int lvl;
@@ -19,7 +19,7 @@ abstract class Monster { //was abstract
 
     @Override
     public String toString() {
-        return "code.code.Monster{" +
+        return "Monster{" +
                 "hp=" + hp +
                 ", dmg=" + dmg +
                 ", name='" + name + '\'' +
