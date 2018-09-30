@@ -25,6 +25,8 @@ public class SkillUsePhase {
                 Skill.setSkillCD(2);
 //                code.CombatGUI.CombatMenu(hero, mob);
                 break;
+            default:
+                break;
         }
     }
 }

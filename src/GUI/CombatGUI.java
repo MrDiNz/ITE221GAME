@@ -36,7 +36,7 @@ public class CombatGUI implements Initializable {
     private Monster monster;
 
     @FXML
-    void attack(ActionEvent event) {
+    void attack() {
         Combat.AttackPhase(hero,monster);
         textarea1.setText(textarea1.getText()+"\nYou chose to attack the monster! You attack monster for " + hero.getDamage()
                 + ", monster health is " + (monster.getHp() < 0 ? "0" : monster.getHp())+"\nMonster attacks back! Your health is " + hero.getHP());
@@ -48,25 +48,27 @@ public class CombatGUI implements Initializable {
     }
 
     @FXML
-    void card(ActionEvent event) {
+    void card() {
         System.out.println(this.card.getSelectionModel().getSelectedIndex());
         Card card = hero.getCard((this.card.getSelectionModel().getSelectedIndex()));
         hero.setInventory((this.card.getSelectionModel().getSelectedIndex()) + 1);
 
         if (card.getTag() == null) {
-            System.out.print("\nWhoops! You picked a null card, try again...");
+            textarea1.setText(textarea1.getText()+"\nWhoops! You picked a null card, try again...");
         }
         else if (card.getTag().equals("health")) {
             hero.setHP(hero.getHP() + card.getCardStat()); //adds health
-            System.out.println("health");
+            textarea1.setText(textarea1.getText() + "Healing complete\n" +
+                    "Your HP is " + hero.getHP() + "\nMonster attacks back! Your health is " + hero.getHP());
         }
         else if (card.getTag().equals("damage")) {
             monster.setHp(hero.Attack(hero, monster) - card.getCardStat()); //adds attack
-            System.out.println("damage");
+            textarea1.setText(textarea1.getText()+"Buff Complete" +
+                    "\nMonster HP is"+monster.getHp());
         }
         else if (card.getTag().equals("escape")) {
-            hero.setEscapeStat(hero.getEscapeStat() + 1);//adds to escape stat
-        System.out.println("escape");
+//            hero.setEscapeStat(hero.getEscapeStat() + 1);//adds to escape stat
+            textarea1.setText(textarea1.getText()+"escape");
         }
 
 
@@ -78,7 +80,7 @@ public class CombatGUI implements Initializable {
     }
 
     @FXML
-    void escape(ActionEvent event) {
+    void escape() {
         textarea1.setText(textarea1.getText() + "\nYou chose escape");
         if (Escape.Escape(hero.getEscapeStat())) {
             textarea1.setText(textarea1.getText() + "\nWow, you escaped!");
@@ -96,7 +98,7 @@ public class CombatGUI implements Initializable {
     }
 
     @FXML
-    void skill(ActionEvent event) {
+    void skill() {
         if (hero.getHeroSkill().getSkillCD() == 0) {
             //console.close();
             SkillUsePhase.SkillUsePhase(hero, monster);

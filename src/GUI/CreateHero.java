@@ -28,7 +28,12 @@ public class CreateHero {
 
     public void createHero() {
         System.out.println(comboboxSkill.getSelectionModel().getSelectedIndex());
-        hero = Hero.GUIHeroCreate(textfieldHeroname.getText(),comboboxSkill.getSelectionModel().getSelectedIndex()+1);
+        if (comboboxSkill.getSelectionModel().getSelectedIndex() > 0) {
+            hero = Hero.GUIHeroCreate(textfieldHeroname.getText(), comboboxSkill.getSelectionModel().getSelectedIndex() + 1);
+        } else {
+            hero = Hero.GUIHeroCreate(textfieldHeroname.getText(), 1);
+        }
+
         Stage stage = (Stage) createHero.getScene().getWindow();
         stage.close();
     }
