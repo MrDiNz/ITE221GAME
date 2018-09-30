@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Hero implements heroInterface {
     private String name;
     private int lvl, EXP, HP, Damage; //what is xp?
-    private Skill heroSkill;
+    public Skill heroSkill;
     private int escapeStat;
     private Stage stage;
     private static Card[] inventory;
@@ -75,9 +75,11 @@ public class Hero implements heroInterface {
     
     
     public String getInventory() {
-    	return  "\n slot [1] = " + inventory[0].getName() + ", " + "slot [2] = " + inventory[1].getName() + 
-    			"\n slot [3] = " + inventory[2].getName() + ", " + "slot [4] = " + inventory[3].getName() + 
-    			"\n slot [5] = " + inventory[4].getName();
+    	return  "\nslot [1] = " + inventory[0].getName() +
+                "\nslot [2] = " + inventory[1].getName() +
+    			"\nslot [3] = " + inventory[2].getName() +
+                "\nslot [4] = " + inventory[3].getName() +
+    			"\nslot [5] = " + inventory[4].getName();
     }
     
     public Card getCard(int num) {

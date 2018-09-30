@@ -63,8 +63,8 @@ abstract class Skill {
 
     @Override
     public String toString() {
-        return "code.Skill{" +
-                "skillNo=" + skillNo +
+        return "Skill{" +
+//                "skillNo=" + skillNo +
                 ", name='" + name + '\'' +
                 '}';
     }

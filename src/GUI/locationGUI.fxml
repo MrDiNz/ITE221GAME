@@ -1,37 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.image.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.shape.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
 
-<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.locationGUI">
    <center>
       <VBox spacing="10.0" BorderPane.alignment="CENTER">
          <children>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L00" mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L01" mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L02" mnemonicParsing="false" text="[   ]" />
                </children>
             </HBox>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L10" mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L11" mnemonicParsing="false" text="[ * ]" />
+                  <Button fx:id="L12" mnemonicParsing="false" text="[   ]" />
                </children>
             </HBox>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
-                  <Button mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L20" mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L21" mnemonicParsing="false" text="[   ]" />
+                  <Button fx:id="L22" mnemonicParsing="false" text="[   ]" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
@@ -61,17 +62,31 @@
          <children>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" text="UP" />
+                  <Button fx:id="buttonUP" mnemonicParsing="false" onAction="#UP" text="UP" />
                </children>
             </HBox>
             <HBox alignment="CENTER" spacing="10.0">
                <children>
-                  <Button mnemonicParsing="false" text="LEFT" />
-                  <Button mnemonicParsing="false" text="DOWN" />
-                  <Button mnemonicParsing="false" text="RIGHT" />
+                  <Button fx:id="buttonLEFT" mnemonicParsing="false" onAction="#LEFT" text="LEFT" />
+                  <Button fx:id="buttonDOWN" mnemonicParsing="false" onAction="#DOWN" text="DOWN" />
+                  <Button fx:id="buttonRIGHT" mnemonicParsing="false" onAction="#RIGHT" text="RIGHT" />
                </children>
             </HBox>
          </children>
       </VBox>
    </bottom>
+   <left>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Information" />
+            <Label fx:id="heroName" text="Name" />
+            <Label fx:id="heroLevel" text="Level" />
+            <Label fx:id="heroHP" text="HP" />
+            <Label fx:id="heroSkill" text="Skill" />
+            <Label text="-----------" />
+            <Label text="Inventory" />
+            <Text fx:id="heroInventory" strokeType="OUTSIDE" strokeWidth="0.0" text="Invent INFO" />
+         </children>
+      </VBox>
+   </left>
 </BorderPane>

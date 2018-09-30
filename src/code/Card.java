@@ -19,7 +19,7 @@ public class Card extends Card_Constructor{
 		}
 		
 		public String toString () {
-			return "\t[code.Card]" + name
+			return "\t[Card]" + name
 					+ "\n||use it to get buff " + cardStat + " to " + tag + "||";
 		}
 
