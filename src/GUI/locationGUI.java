@@ -19,6 +19,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 import code.*;
+import javafx.stage.StageStyle;
 
 public class locationGUI implements Initializable {
     private Stage gameStage;
@@ -27,6 +28,9 @@ public class locationGUI implements Initializable {
     private Button[][] arrayButton;
     @FXML
     private Button L00,L01,L02,L10,L11,L12,L20,L21, L22;
+
+    @FXML
+    private Label labelLevel;
 
     @FXML
     private Button buttonUP;
@@ -62,35 +66,44 @@ public class locationGUI implements Initializable {
     @FXML
     void UP(ActionEvent event) throws IOException {
 
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
-        gameStage.setX(gameStage.getX() - 1);
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
-        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        if (gameStage.getX() > 0) {
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
+            gameStage.setX(gameStage.getX() - 1);
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+            combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+
+        }
 
     }
 
     @FXML
     void DOWN(ActionEvent event) throws IOException {
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
-        gameStage.setX(gameStage.getX() + 1);
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
-        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        if (gameStage.getX() < 2) {
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
+            gameStage.setX(gameStage.getX() + 1);
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+            combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        }
     }
 
     @FXML
     public void LEFT(ActionEvent event) throws IOException {
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
-        gameStage.setY(gameStage.getY() - 1);
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
-        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        if (gameStage.getY() > 0) {
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
+            gameStage.setY(gameStage.getY() - 1);
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+            combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        }
     }
 
     @FXML
     public void RIGHT(ActionEvent event) throws IOException {
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
-        gameStage.setY(gameStage.getY() + 1);
-        arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
-        combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        if (gameStage.getY() < 2) {
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
+            gameStage.setY(gameStage.getY() + 1);
+            arrayButton[gameStage.getX()][gameStage.getY()].setText("[ * ]");
+            combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+        }
     }
     public void combat(Hero hero, Monster monster) throws IOException {
         if (gameStage.getStage(gameStage.getX(), gameStage.getY()) != null) {
@@ -113,8 +126,22 @@ public class locationGUI implements Initializable {
             pane.setDisable(true);
             stage.showAndWait();
             pane.setDisable(false);
-            if (hero.getHP() > 0 && monster.getHp() <= 0) {
+            if (monster.getHp() <= 0 && hero.getHP() > 0) {
                 gameStage.setMonsgterDie(gameStage.getX(), gameStage.getY());
+                monsterDefeatedCount++;
+                if (monsterDefeatedCount >= 8) {
+                    javafx.stage.Stage stage1 = (javafx.stage.Stage) buttonDOWN.getScene().getWindow();
+//                    stage.close();
+                    arrayButton[gameStage.getX()][gameStage.getY()].setText("[   ]");
+//                    gameStage.setY(gameStage.getY() + 1);
+                    arrayButton[1][1].setText("[ * ]");
+//                    combat(hero, gameStage.getStage(gameStage.getX(), gameStage.getY()));
+                        stage1.hide();
+
+                }
+            } else if (hero.getHP() <= 0) {
+//                stage.close();
+                stage.hide();
             }
 
 
@@ -122,7 +149,7 @@ public class locationGUI implements Initializable {
 //            info update here
             updateInfo();
 
-//            if (hero.getHP() > 0) {
+//            if (hero.getHP() > 0 && monster.getHp() <= 0) {
 //                monsterDefeatedCount++;
 //            } else {
 //                monsterDefeatedCount = 9;
@@ -141,6 +168,8 @@ public class locationGUI implements Initializable {
 
     public void setStage(Stage stage) {
         this.gameStage = stage;
+        monsterDefeatedCount = 0;
+
     }
 
     public Hero getHero() {
@@ -152,11 +181,10 @@ public class locationGUI implements Initializable {
     }
 
     public void updateInfo() {
-        System.out.println(this.hero.getName());
-        heroName.setText(this.hero.getName());
-        heroHP.setText(String.valueOf(this.hero.getHP()));
-        heroLevel.setText(String.valueOf(this.hero.getLvl()));
-        heroSkill.setText(String.valueOf(this.hero.heroSkill));
+        heroName.setText("name: " + this.hero.getName());
+        heroHP.setText(String.valueOf("HP: " + this.hero.getHP()));
+        heroLevel.setText(String.valueOf("Level: " + this.hero.getLvl()));
+        heroSkill.setText(String.valueOf("Skill: " + this.hero.heroSkill));
         heroInventory.setText(this.hero.getInventory());
 
     }
@@ -178,5 +206,11 @@ public class locationGUI implements Initializable {
         arrayButton[2][0] = L20;
         arrayButton[2][1] = L21;
         arrayButton[2][2] = L22;
+    }
+
+
+
+    public void setLabelLevel(String text) {
+        this.labelLevel.setText(text);
     }
 }

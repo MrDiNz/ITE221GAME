@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ITE221GAME:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3a1fd7d1-ec6e-4d2d-8f7a-8ed91ef9ce10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ITE221GAME_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GUI/CombatGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/CombatGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/code/SkillUsePhase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/code/SkillUsePhase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/CreateHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/CreateHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/locationGUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/locationGUI.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/locationGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/locationGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MainGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/code/MainGUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/ITE221GAME$MainGUI__1_.ic" NAME="MainGUI (1) Coverage Results" MODIFIED="1538376624448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>GUI.*</FILTER>
+    </SUITE>
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1614462914">
@@ -21,13 +39,17 @@
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="3" />
-          <entry key="java" value="67" />
+          <entry key="JAVA/" value="1" />
+          <entry key="JAVA/GUI" value="1" />
+          <entry key="JAVA/code" value="1" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="70" />
           <entry key="jpg" value="1" />
           <entry key="patch" value="1" />
         </counts>
@@ -35,22 +57,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="67" />
+          <entry key="JAVA" value="70" />
           <entry key="PATCH" value="1" />
-          <entry key="XML" value="3" />
+          <entry key="UML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="12" />
           <entry key="fxml" value="17" />
-          <entry key="java" value="2031" />
+          <entry key="java" value="2300" />
           <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2031" />
+          <entry key="JAVA" value="2300" />
           <entry key="PLAIN_TEXT" value="23" />
           <entry key="XML" value="17" />
         </counts>
@@ -63,39 +86,40 @@
     <session id="1007280526">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.22" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="8" />
-          <entry key="java" value="74" />
+          <entry key="fxml" value="9" />
+          <entry key="java" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="74" />
-          <entry key="XML" value="8" />
+          <entry key="JAVA" value="88" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
           <entry key="fxml" value="15" />
-          <entry key="java" value="3404" />
-          <entry key="txt" value="114" />
+          <entry key="java" value="3924" />
+          <entry key="txt" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3404" />
-          <entry key="PLAIN_TEXT" value="125" />
+          <entry key="JAVA" value="3924" />
+          <entry key="PLAIN_TEXT" value="202" />
           <entry key="XML" value="15" />
         </counts>
       </usages-collector>
@@ -113,10 +137,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/test.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/MainGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="87">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,10 +149,234 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/main.java">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="304.0" y="504.076171875">com</node>
+                <node x="452.0" y="504.076171875">img</node>
+                <node x="171.0" y="430.076171875">images</node>
+                <node x="0.0" y="430.076171875">netscape</node>
+                <node x="50.0" y="17.076171875">code</node>
+                <node x="494.0" y="430.076171875">oracle</node>
+                <node x="288.0" y="578.076171875">org</node>
+                <node x="283.0" y="246.076171875">main</node>
+                <node x="0.0" y="356.076171875">toolbarButtonGraphics</node>
+                <node x="145.0" y="578.076171875">sun</node>
+                <node x="453.0" y="356.076171875">META-INF</node>
+                <node x="430.0" y="578.076171875">jdk</node>
+                <node x="244.0" y="356.076171875">groovyjarjarasm</node>
+                <node x="0.0" y="578.076171875">java</node>
+                <node x="333.0" y="430.076171875">groovy</node>
+                <node x="154.0" y="504.076171875">javax</node>
+                <node x="83.5" y="136.076171875">GUI</node>
+                <node x="30.0" y="246.076171875">groovyjarjarcommonscli</node>
+                <node x="0.0" y="504.076171875">javafx</node>
+                <node x="266.5" y="6.201171875">groovyjarjarantlr</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="GUI" target="GUI">
+                  <point x="24.5" y="14.5" />
+                  <point x="157.0" y="195.076171875" />
+                  <point x="53.5" y="195.076171875" />
+                  <point x="53.5" y="143.326171875" />
+                  <point x="-49.0" y="-7.25" />
+                </edge>
+                <edge source="GUI" target="code">
+                  <point x="32.66666666666666" y="-14.5" />
+                  <point x="165.16666666666666" y="116.076171875" />
+                  <point x="147.5" y="116.076171875" />
+                  <point x="45.0" y="14.5" />
+                </edge>
+                <edge source="code" target="code">
+                  <point x="-30.0" y="14.5" />
+                  <point x="72.5" y="76.076171875" />
+                  <point x="20.0" y="76.076171875" />
+                  <point x="20.0" y="35.201171875" />
+                  <point x="-52.5" y="3.625" />
+                </edge>
+                <edge source="groovyjarjarantlr" target="groovyjarjarantlr">
+                  <point x="55.33333333333334" y="14.5" />
+                  <point x="404.83333333333337" y="75.201171875" />
+                  <point x="226.5" y="75.201171875" />
+                  <point x="226.5" y="11.034505208333336" />
+                  <point x="-83.0" y="-9.666666666666664" />
+                </edge>
+                <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli">
+                  <point x="52.0" y="14.5" />
+                  <point x="186.0" y="305.076171875" />
+                  <point x="0.0" y="305.076171875" />
+                  <point x="0.0" y="253.326171875" />
+                  <point x="-104.0" y="-7.25" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="220.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+                <Category>Inner Classes</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/code">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>code</OriginalElement>
+              <nodes>
+                <node x="59.0" y="0.0">code.heroInterface</node>
+                <node x="839.0" y="618.0">code.MonsterConstruct</node>
+                <node x="786.0" y="1133.0">code.Randomizer</node>
+                <node x="281.0" y="434.0">code.Skill_Heal</node>
+                <node x="0.0" y="1229.0">code.main</node>
+                <node x="0.0" y="875.0">code.Monster_Hard</node>
+                <node x="283.0" y="618.0">code.Monster</node>
+                <node x="0.0" y="1133.0">code.BattleStart</node>
+                <node x="951.5" y="0.0">code.Card_Constructor</node>
+                <node x="302.25" y="0.0">code.Skill</node>
+                <node x="721.5" y="0.0">code.stageInterface</node>
+                <node x="607.0" y="971.0">code.Inventory</node>
+                <node x="214.0" y="1229.0">code.Death</node>
+                <node x="943.0" y="167.0">code.Card</node>
+                <node x="0.0" y="971.0">code.testMain</node>
+                <node x="278.0" y="1133.0">code.Gameplay</node>
+                <node x="289.0" y="971.0">code.Combat</node>
+                <node x="445.0" y="434.0">code.Skill_DamageX2</node>
+                <node x="266.0" y="875.0">code.Monster_Medium</node>
+                <node x="551.0" y="875.0">code.Monster_easy</node>
+                <node x="543.0" y="1133.0">code.Card_Choice</node>
+                <node x="393.0" y="1229.0">code.MonsterInterface</node>
+                <node x="0.0" y="79.0">code.Hero</node>
+                <node x="1041.0" y="971.0">code.SkillUsePhase</node>
+                <node x="1022.0" y="1133.0">code.Escape</node>
+                <node x="667.0" y="79.0">code.Stage</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="code.Card" target="code.Card_Constructor">
+                  <point x="0.0" y="-92.5" />
+                  <point x="0.0" y="58.5" />
+                </edge>
+                <edge source="code.Monster_easy" target="code.Monster">
+                  <point x="0.0" y="-25.5" />
+                  <point x="672.5" y="850.0" />
+                  <point x="475.5" y="850.0" />
+                  <point x="77.0" y="103.5" />
+                </edge>
+                <edge source="code.Skill_DamageX2" target="code.Skill">
+                  <point x="0.0" y="-25.5" />
+                  <point x="533.5" y="409.0" />
+                  <point x="513.75" y="409.0" />
+                  <point x="70.5" y="192.0" />
+                </edge>
+                <edge source="code.Monster_Hard" target="code.Monster">
+                  <point x="0.0" y="-25.5" />
+                  <point x="123.0" y="850.0" />
+                  <point x="321.5" y="850.0" />
+                  <point x="-77.0" y="103.5" />
+                </edge>
+                <edge source="code.Skill_Heal" target="code.Skill">
+                  <point x="0.0" y="-25.5" />
+                  <point x="353.0" y="409.0" />
+                  <point x="372.75" y="409.0" />
+                  <point x="-70.5" y="192.0" />
+                </edge>
+                <edge source="code.Hero" target="code.heroInterface">
+                  <point x="0.0" y="-247.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="code.Stage" target="code.stageInterface">
+                  <point x="0.0" y="-136.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="code.Monster_Medium" target="code.Monster">
+                  <point x="0.0" y="-25.5" />
+                  <point x="0.0" y="103.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9521341463414635" x="466.27601665065635" y="273.5510726865193" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Inner Classes</Category>
+                <Category>Properties</Category>
+                <Category>Methods</Category>
+                <Category>Constructors</Category>
+                <Category>Fields</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/GUI">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>GUI</OriginalElement>
+              <nodes>
+                <node x="0.0" y="0.0">GUI.locationGUI</node>
+                <node x="0.0" y="74.0">GUI.CombatGUI</node>
+                <node x="0.0" y="148.0">GUI.CreateHero</node>
+                <node x="153.0" y="148.0">GUI.MainGUI</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-99.5" y="49.0" />
+              <SelectedNodes>
+                <node>GUI.locationGUI</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/Monster_easy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/Monster.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/code/Stage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/com/sun/javafx/application/LauncherImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="918" selection-start-line="918" selection-end-line="918" />
             </state>
           </provider>
         </entry>
@@ -136,104 +384,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="192" column="26" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GUI/CombatGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5428#5429#0" expanded="true" />
-                <element signature="e#5460#5461#0" expanded="true" />
-                <element signature="e#5505#5506#0" expanded="true" />
-                <element signature="e#5549#5550#0" expanded="true" />
-                <element signature="e#5578#5579#0" expanded="true" />
-                <element signature="e#5605#5606#0" expanded="true" />
-                <element signature="e#5643#5644#0" expanded="true" />
-                <element signature="e#5675#5676#0" expanded="true" />
-                <element signature="e#5710#5711#0" expanded="true" />
-                <element signature="e#5740#5741#0" expanded="true" />
-                <element signature="e#5787#5788#0" expanded="true" />
-                <element signature="e#5825#5826#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="985">
+              <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/SkillUsePhase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="28" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/Gameplay.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="17" column="38" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/Card.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-              <folding>
-                <element signature="e#888#889#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/Combat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/code/Hero.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="114" column="15" selection-start-line="114" selection-start-column="15" selection-end-line="114" selection-end-column="15" />
-              <folding>
-                <element signature="e#2510#2511#0" expanded="true" />
-                <element signature="e#2544#2545#0" expanded="true" />
-                <element signature="e#3476#3477#0" expanded="true" />
-                <element signature="e#3521#3522#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/GUI/CreateHero.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -258,6 +422,11 @@
       <find>onAction</find>
       <find>code</find>
       <find>locationGUI</find>
+      <find>print</find>
+      <find>heroName</find>
+      <find>stage</find>
+      <find>stage.cl</find>
+      <find>root</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -283,7 +452,6 @@
         <option value="$PROJECT_DIR$/src/GUI/Createhero.fxml" />
         <option value="$PROJECT_DIR$/src/main.java" />
         <option value="$PROJECT_DIR$/src/code/MainGUI.java" />
-        <option value="$PROJECT_DIR$/src/GUI/CreateHero.java" />
         <option value="$PROJECT_DIR$/src/GUI/Gameplay.fxml" />
         <option value="$PROJECT_DIR$/src/GUI/GameplayGUI.java" />
         <option value="$PROJECT_DIR$/src/code/Card_Constructor.java" />
@@ -299,10 +467,14 @@
         <option value="$PROJECT_DIR$/src/code/Stage.java" />
         <option value="$PROJECT_DIR$/src/code/Combat.java" />
         <option value="$PROJECT_DIR$/src/code/Card.java" />
-        <option value="$PROJECT_DIR$/src/GUI/locationGUI.java" />
         <option value="$PROJECT_DIR$/src/code/Hero.java" />
         <option value="$PROJECT_DIR$/src/code/SkillUsePhase.java" />
+        <option value="$PROJECT_DIR$/src/img/MainGUI.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/GUI/CombatGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/CreateHero.java" />
+        <option value="$PROJECT_DIR$/src/GUI/locationGUI.java" />
+        <option value="$PROJECT_DIR$/src/GUI/MainGUI.java" />
       </list>
     </option>
   </component>
@@ -312,10 +484,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -327,6 +505,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -352,26 +532,34 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ITE221GAME" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITE221GAME" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538340822819" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../ITE442 - Database Management Systems II/RepairSoftware/RepairSoftwareV1/RepairSoftwareV1" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538378272629" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pakor\OneDrive - Stamford International University\ITE222 - Programming II\ProjectITE222_Egor\ITE221\ITE221GAME\src\img" />
     </key>
@@ -388,9 +576,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.test">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+  <component name="RunManager" selected="Application.MainGUI (1)">
+    <configuration name="MainGUI (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.MainGUI" />
       <module name="ITE221GAME" />
       <extension name="coverage">
         <pattern>
@@ -415,6 +603,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.MainGUI" />
+      <module name="ITE221GAME" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="code.main" />
       <module name="ITE221GAME" />
@@ -422,46 +623,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.test" />
-      <module name="ITE221GAME" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testasdasd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.testasdasd" />
-      <module name="ITE221GAME" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.main" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.test" />
       <item itemvalue="Application.MainGUI" />
-      <item itemvalue="Application.testasdasd" />
+      <item itemvalue="Application.MainGUI (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.MainGUI (1)" />
         <item itemvalue="Application.main" />
-        <item itemvalue="Application.testasdasd" />
         <item itemvalue="Application.MainGUI" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainGUI" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +658,10 @@
       <workItem from="1538297239524" duration="982000" />
       <workItem from="1538298306426" duration="6013000" />
       <workItem from="1538325194059" duration="1936000" />
-      <workItem from="1538327163873" duration="13413000" />
+      <workItem from="1538327163873" duration="16097000" />
+      <workItem from="1538343330409" duration="668000" />
+      <workItem from="1538344017839" duration="101000" />
+      <workItem from="1538373428840" duration="4622000" />
     </task>
     <task id="LOCAL-00001" summary="combind tgt">
       <created>1538126077673</created>
@@ -544,16 +719,33 @@
       <option name="project" value="LOCAL" />
       <updated>1538338889456</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Finish need to implement more in CombatGUI card usage if i have free time">
+      <created>1538340859283</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538340859283</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39722000" />
+    <option name="totallyTimeSpent" value="47797000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28837952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29954615" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -563,16 +755,17 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.35683298" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.49457702" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.26229507" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49924356" weight="0.3286334" />
+      <window_info anchor="bottom" id="Cvs" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="6" sideWeight="0.5015129" side_tool="true" weight="0.35573772" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49924356" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.49848714" weight="0.35573772" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.49344262" />
+      <window_info anchor="bottom" id="TODO" order="10" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32980332" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -581,7 +774,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28214827" />
@@ -631,7 +824,9 @@
     <MESSAGE value="gui in progress" />
     <MESSAGE value="GUI location working" />
     <MESSAGE value="GUI done except card" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI done except card" />
+    <MESSAGE value="Finish need to implement more in CombatGUI card usage if i have free time" />
+    <MESSAGE value="Finish need to implement more in CombatGUI card usage if i have free time2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finish need to implement more in CombatGUI card usage if i have free time2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -643,16 +838,37 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/GUI/CreateHero.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/GUI/MainGUI.java</url>
+          <line>20</line>
           <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GUI/MainGUI.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
+      <expression>
+        <expression-string>1000</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>10000</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>100</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>&quot;damage&quot;</expression-string>
         <language-id>JAVA</language-id>
@@ -679,27 +895,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>1000</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
         <expression-string>1</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>0</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>10</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>100</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -721,14 +917,6 @@
           <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Createhero.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/code/Death.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -761,23 +949,6 @@
     <entry file="file://$PROJECT_DIR$/src/img/57bd47ce7d29baf67d1cdffba719054e.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/MainGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/Skill_DamageX2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -792,49 +963,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/testasdasd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/testasdasd.java" />
     <entry file="file://$PROJECT_DIR$/src/code/Monster_Hard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Monster_easy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Stage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="56" column="106" selection-start-line="56" selection-start-column="106" selection-end-line="56" selection-end-column="106" />
-          <folding>
-            <element signature="e#4441#4442#0" expanded="true" />
-            <element signature="e#4465#4466#0" expanded="true" />
-            <element signature="e#4547#4548#0" expanded="true" />
-            <element signature="e#4571#4572#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/Monster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -867,14 +1000,6 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/SelectionModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -896,39 +1021,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/ComboBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="376" column="62" selection-start-line="376" selection-start-column="62" selection-end-line="376" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/Card.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-51">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="1681" column="9" lean-forward="true" selection-start-line="1681" selection-start-column="9" selection-end-line="1681" selection-end-column="9" />
-          <folding>
-            <element signature="e#67760#67761#0" expanded="true" />
-            <element signature="e#67805#67806#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -946,55 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/code/SkillUsePhase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/CombatGUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="121" column="26" selection-start-line="121" selection-start-column="26" selection-end-line="121" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5428#5429#0" expanded="true" />
-            <element signature="e#5460#5461#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
-            <element signature="e#5549#5550#0" expanded="true" />
-            <element signature="e#5578#5579#0" expanded="true" />
-            <element signature="e#5605#5606#0" expanded="true" />
-            <element signature="e#5643#5644#0" expanded="true" />
-            <element signature="e#5675#5676#0" expanded="true" />
-            <element signature="e#5710#5711#0" expanded="true" />
-            <element signature="e#5740#5741#0" expanded="true" />
-            <element signature="e#5787#5788#0" expanded="true" />
-            <element signature="e#5825#5826#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/code/Hero.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1008,13 +1055,347 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/CreateHero.java">
+    <entry file="file://$PROJECT_DIR$/src/code/SkillUsePhase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="459">
+          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/img/MainGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/ComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="376" column="62" selection-start-line="376" selection-start-column="62" selection-end-line="376" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/TextInputControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="356" column="35" selection-start-line="356" selection-start-column="35" selection-end-line="356" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.fxml/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="1670" selection-start-line="1670" selection-end-line="1670" />
+          <folding>
+            <element signature="e#67760#67761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8865" selection-start-line="8865" selection-end-line="8865" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.controls/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.base/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="3898" selection-start-line="3898" selection-end-line="3898" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/MainGUI.java" />
+    <entry file="file://$PROJECT_DIR$/src/GUI/CombatGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/CreateHero.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="32" column="70" lean-forward="true" selection-start-line="32" selection-start-column="70" selection-end-line="32" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/Createhero.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Stage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="985">
+          <caret line="81" column="30" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/code/Monster_easy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/locationGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="192" column="26" selection-start-line="192" selection-start-column="16" selection-end-line="192" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.2/lib/src.zip!/javafx.graphics/com/sun/javafx/application/LauncherImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="918" selection-start-line="918" selection-end-line="918" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GUI/MainGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="304.0" y="504.076171875">com</node>
+            <node x="452.0" y="504.076171875">img</node>
+            <node x="171.0" y="430.076171875">images</node>
+            <node x="0.0" y="430.076171875">netscape</node>
+            <node x="50.0" y="17.076171875">code</node>
+            <node x="494.0" y="430.076171875">oracle</node>
+            <node x="288.0" y="578.076171875">org</node>
+            <node x="283.0" y="246.076171875">main</node>
+            <node x="0.0" y="356.076171875">toolbarButtonGraphics</node>
+            <node x="145.0" y="578.076171875">sun</node>
+            <node x="453.0" y="356.076171875">META-INF</node>
+            <node x="430.0" y="578.076171875">jdk</node>
+            <node x="244.0" y="356.076171875">groovyjarjarasm</node>
+            <node x="0.0" y="578.076171875">java</node>
+            <node x="333.0" y="430.076171875">groovy</node>
+            <node x="154.0" y="504.076171875">javax</node>
+            <node x="83.5" y="136.076171875">GUI</node>
+            <node x="30.0" y="246.076171875">groovyjarjarcommonscli</node>
+            <node x="0.0" y="504.076171875">javafx</node>
+            <node x="266.5" y="6.201171875">groovyjarjarantlr</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="GUI" target="GUI">
+              <point x="24.5" y="14.5" />
+              <point x="157.0" y="195.076171875" />
+              <point x="53.5" y="195.076171875" />
+              <point x="53.5" y="143.326171875" />
+              <point x="-49.0" y="-7.25" />
+            </edge>
+            <edge source="GUI" target="code">
+              <point x="32.66666666666666" y="-14.5" />
+              <point x="165.16666666666666" y="116.076171875" />
+              <point x="147.5" y="116.076171875" />
+              <point x="45.0" y="14.5" />
+            </edge>
+            <edge source="code" target="code">
+              <point x="-30.0" y="14.5" />
+              <point x="72.5" y="76.076171875" />
+              <point x="20.0" y="76.076171875" />
+              <point x="20.0" y="35.201171875" />
+              <point x="-52.5" y="3.625" />
+            </edge>
+            <edge source="groovyjarjarantlr" target="groovyjarjarantlr">
+              <point x="55.33333333333334" y="14.5" />
+              <point x="404.83333333333337" y="75.201171875" />
+              <point x="226.5" y="75.201171875" />
+              <point x="226.5" y="11.034505208333336" />
+              <point x="-83.0" y="-9.666666666666664" />
+            </edge>
+            <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli">
+              <point x="52.0" y="14.5" />
+              <point x="186.0" y="305.076171875" />
+              <point x="0.0" y="305.076171875" />
+              <point x="0.0" y="253.326171875" />
+              <point x="-104.0" y="-7.25" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="51.0" y="220.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/GUI">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>GUI</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">GUI.locationGUI</node>
+            <node x="0.0" y="74.0">GUI.CombatGUI</node>
+            <node x="0.0" y="148.0">GUI.CreateHero</node>
+            <node x="153.0" y="148.0">GUI.MainGUI</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-99.5" y="49.0" />
+          <SelectedNodes>
+            <node>GUI.locationGUI</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/code">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>code</OriginalElement>
+          <nodes>
+            <node x="59.0" y="0.0">code.heroInterface</node>
+            <node x="839.0" y="618.0">code.MonsterConstruct</node>
+            <node x="786.0" y="1133.0">code.Randomizer</node>
+            <node x="281.0" y="434.0">code.Skill_Heal</node>
+            <node x="0.0" y="1229.0">code.main</node>
+            <node x="0.0" y="875.0">code.Monster_Hard</node>
+            <node x="283.0" y="618.0">code.Monster</node>
+            <node x="0.0" y="1133.0">code.BattleStart</node>
+            <node x="951.5" y="0.0">code.Card_Constructor</node>
+            <node x="302.25" y="0.0">code.Skill</node>
+            <node x="721.5" y="0.0">code.stageInterface</node>
+            <node x="607.0" y="971.0">code.Inventory</node>
+            <node x="214.0" y="1229.0">code.Death</node>
+            <node x="943.0" y="167.0">code.Card</node>
+            <node x="0.0" y="971.0">code.testMain</node>
+            <node x="278.0" y="1133.0">code.Gameplay</node>
+            <node x="289.0" y="971.0">code.Combat</node>
+            <node x="445.0" y="434.0">code.Skill_DamageX2</node>
+            <node x="266.0" y="875.0">code.Monster_Medium</node>
+            <node x="551.0" y="875.0">code.Monster_easy</node>
+            <node x="543.0" y="1133.0">code.Card_Choice</node>
+            <node x="393.0" y="1229.0">code.MonsterInterface</node>
+            <node x="0.0" y="79.0">code.Hero</node>
+            <node x="1041.0" y="971.0">code.SkillUsePhase</node>
+            <node x="1022.0" y="1133.0">code.Escape</node>
+            <node x="667.0" y="79.0">code.Stage</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="code.Card" target="code.Card_Constructor">
+              <point x="0.0" y="-92.5" />
+              <point x="0.0" y="58.5" />
+            </edge>
+            <edge source="code.Monster_easy" target="code.Monster">
+              <point x="0.0" y="-25.5" />
+              <point x="672.5" y="850.0" />
+              <point x="475.5" y="850.0" />
+              <point x="77.0" y="103.5" />
+            </edge>
+            <edge source="code.Skill_DamageX2" target="code.Skill">
+              <point x="0.0" y="-25.5" />
+              <point x="533.5" y="409.0" />
+              <point x="513.75" y="409.0" />
+              <point x="70.5" y="192.0" />
+            </edge>
+            <edge source="code.Monster_Hard" target="code.Monster">
+              <point x="0.0" y="-25.5" />
+              <point x="123.0" y="850.0" />
+              <point x="321.5" y="850.0" />
+              <point x="-77.0" y="103.5" />
+            </edge>
+            <edge source="code.Skill_Heal" target="code.Skill">
+              <point x="0.0" y="-25.5" />
+              <point x="353.0" y="409.0" />
+              <point x="372.75" y="409.0" />
+              <point x="-70.5" y="192.0" />
+            </edge>
+            <edge source="code.Hero" target="code.heroInterface">
+              <point x="0.0" y="-247.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="code.Stage" target="code.stageInterface">
+              <point x="0.0" y="-136.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="code.Monster_Medium" target="code.Monster">
+              <point x="0.0" y="-25.5" />
+              <point x="0.0" y="103.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9521341463414635" x="466.27601665065635" y="273.5510726865193" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
@@ -1024,10 +1405,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>ITE221GAME:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -1075,7 +1458,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

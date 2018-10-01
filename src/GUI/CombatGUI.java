@@ -76,6 +76,9 @@ public class CombatGUI implements Initializable {
         System.out.println("\ncode.Monster attacks back! Your health is " + (hero.getHP() < 0 ? "0" : hero.getHP()));
         updateInventory();
         if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1);
+        if (monster.getHp() <= 0) {
+            Stage stage = (javafx.stage.Stage) attack.getScene().getWindow();
+            stage.close();}
 
     }
 
@@ -93,8 +96,10 @@ public class CombatGUI implements Initializable {
             hero.setHP(monster.AttackX(hero, monster, 2)); //if escape failed, player gets attacked with double damage
             textarea1.setText(textarea1.getText() + "\nMonster attacks your back for critical damage! \nYour health is " + hero.getHP());
             if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1);
-
         }
+        if (monster.getHp() <= 0) {
+            Stage stage = (javafx.stage.Stage) attack.getScene().getWindow();
+            stage.close();}
     }
 
     @FXML
@@ -127,6 +132,9 @@ public class CombatGUI implements Initializable {
             Skill.setSkillCD(Skill.getSkillCD() + 1);
         }
         if (Skill.getSkillCD() > 0) Skill.setSkillCD(Skill.getSkillCD() - 1);
+        if (monster.getHp() <= 0) {
+            Stage stage = (javafx.stage.Stage) attack.getScene().getWindow();
+            stage.close();}
 
     }
 

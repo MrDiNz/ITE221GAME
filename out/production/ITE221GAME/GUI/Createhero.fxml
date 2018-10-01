@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreateHero">
+   <top>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Hero Creation" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Hero name" />
+                  <TextField fx:id="textfieldHeroname" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Label text="Skill" />
+                  <ComboBox fx:id="comboboxSkill" prefWidth="150.0" promptText="Please select code.Skill" />
+               </children>
+            </HBox>
+            <Button fx:id="createHero" mnemonicParsing="false" onAction="#createHero" text="Create" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

@@ -4,10 +4,11 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import code.*;
 
-public class test extends Application {
+public class MainGUI extends Application {
     public static void main(String[] args) {
         launch(args);
     }
@@ -30,10 +31,34 @@ public class test extends Application {
         locationGUIController.setStage(easyStage);
         locationGUIController.setHero(hero);
         locationGUIController.updateInfo();
+        locationGUIController.setLabelLevel("Level 1");
         stage.showAndWait();
 
+        //stage.hide();
+       // stage.hide();
+
+//        javafx.stage.Stage stage2 = new javafx.stage.Stage();
+//        FXMLLoader loader2 = new FXMLLoader();
+//        Parent locationGUIScene2 = loader2.load(getClass().getResourceAsStream("locationGUI.fxml"));
+//        locationGUI locationGUIController2 = loader.getController();
+//        stage.setScene(new Scene(locationGUIScene2));
+//        locationGUIController2.setStage(mediumStage);
+//        locationGUIController2.setHero(hero);
+//        locationGUIController2.updateInfo();
+//        locationGUIController2.setLabelLevel("Level 1");
+//        stage2.showAndWait();
+       // Stage s2 = new Stage();
+        //stage.setScene(new Scene(locationGUIScene));
+        locationGUIController.setLabelLevel("Level 2");
+        locationGUIController.setStage(mediumStage);
+        stage.showAndWait();
+     //   s2.showAndWait();
 
 
+        //stage.setScene(new Scene(locationGUIScene));
+        locationGUIController.setLabelLevel("Level 3");
+        locationGUIController.setStage(hardStage);
+        stage.showAndWait();
 
 //        hero = new locationGUI().run(hero, easyStage);
 //        System.out.println(hero);
